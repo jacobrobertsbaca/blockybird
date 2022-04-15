@@ -1,0 +1,23 @@
+.account {
+    background: rgb(233, 233, 233);
+    padding: .3em;
+    border-radius: .3em;
+    position: relative;
+    display: inline-block;
+    text-indent: 1.2em;
+  }
+
+.account + .account {
+    margin-left: 0.5em;
+}
+  
+.account:before {
+    position: absolute;
+    content: "";
+    background: green;
+    width: .7em;
+    height: .7em;
+    border-radius: 50%;
+    left: .5em;
+    top: .6em;
+}

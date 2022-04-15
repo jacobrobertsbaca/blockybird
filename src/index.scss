@@ -1,0 +1,14 @@
+html {
+  overflow: hidden;
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+}

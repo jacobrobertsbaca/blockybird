@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './App.scss';
+import OnboardingModal from './components/OnboardingModal';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [accounts, setAccounts] = useState([]);
+
+    return (
+        <div className='App'>
+            <OnboardingModal handleAccounts={setAccounts}/>
+            <div className='game-container'>
+                <iframe className='game' frameBorder={0} src="https://playcanv.as/e/p/yEW2U6hC/"></iframe>
+            </div>
+        </div>
+    );
 }
 
 export default App;
